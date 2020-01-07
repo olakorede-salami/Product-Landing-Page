@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <!-- <link rel="stylesheet" type="css" href="Product Landing Page.css">-->
+    <title>Product Landing Page</title>
+    <style>
+        @import "https://fonts.googleapis.com/css?family=Lato:400,700";
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 0px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color:white;
+    max-width: 100%;
+    position: sticky;
+    top: 0px;
+}
+
+
+#header-img {
+    max-width: 100%;
+    width: 30rem;
+    margin: 0 0 0 -20px;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+ol {
+    list-style: none;
+    width: 50%;
+    margin-left: 25%;
+    padding: 0px;
+}
+
+#nav-bar {
+    padding: 0px 60px;
+}
+
+li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+.form-class {
+    display: flex;
+    justify-content: center;
+}
+
+#email {
+    padding: 6px 120px 6px 5px;
+    border: 1px solid rgba(0, 0, 0, 0.411);
+}
+.submit {
+    margin: 10px 0;
+    padding: 5px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: rgb(241,196,13);
+    border-radius: 5px;
+    border-style: none;
+}
+
+.submit:hover {
+    transition-delay: 0.3s;
+    background-color: chocolate;
+}
+
+main, footer {
+    width: 70%;
+    height: 100%;
+    margin: 0px auto;
+   /* background-color: salmon;*/
+}
+
+.info {
+    margin-top: 90px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+.all-icons {
+    width: 4rem;
+    margin-right: 60px;
+}
+
+.icon-h2{
+    margin-bottom: 0px;
+    font-weight: bolder;
+}
+
+.icon-para {
+    margin-top: 0px;
+}
+
+.vid {
+    display: flex;
+    justify-content: center; 
+    padding: 60px 0 60px 60px;
+}
+
+.grid {
+    display: flex;
+}
+.top-grid {
+    padding: 15px;
+    margin-bottom: 15px ;
+    text-align: center;
+    background-color: rgb(221,221,221);
+}
+
+h4 {
+    margin: 0px 0px;
+}
+
+.main-grid {
+    text-align: center;
+    padding-bottom: 40px;
+    border: 1px solid black;
+
+}
+
+#grid-1, #grid-2 {
+    margin-right: 10px ;
+}
+
+.grid-h4 {
+    font-size: 1.5rem;
+}
+
+.grid-para {
+    padding: 0 0%;
+    background-color: springgreen;
+}
+
+.select-button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: rgb(241,196,13);
+    border-style: none;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: end ;
+    background-color: rgb(221,221,221);
+}
+
+.footer-top {
+    padding-top: 10px;
+}
+
+.footer-para {
+    font-size: 0.9rem;
+    padding-top: 0px;
+    margin-top: 4px;
+    color: rgba(0, 0, 0, 0.664);
+}
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="img-class">
+        <img src="Images/original_trombones.png" alt="original trombones logo" id="header-img">
+        </div>
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <div class="form-class">
+                <h1>Handcrafted, home-made masterpieces</h1>
+            </div>
+            <div class="form-class">
+                <input 
+                type="email" 
+                id="email" 
+                placeholder="Enter your email address"
+                required>
+            </div>
+            <div class="form-class">
+                <button type="submit" id="submit" class="submit">GET STARTED</button>
+                </div>
+        </form>
+        <section class="info" id="features">
+            <div class="icon">
+                <img src="Images/product.png" alt="Premium Materials" class="all-icons" id="icon-1">
+                <div>
+                    <h2 class="icon-h2">Premium Materials</h2>
+                    <p class="icon-para">Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+                </div>
+            </div>
+            <div class="icon">
+                <img src="Images/airplane-2.png" alt="Premium Materials" class="all-icons" id="icon-2">
+                <div>
+                    <h2 class="icon-h2">Fast Shipping</h2>
+                    <p class="icon-para">We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.
+                    </p>
+                 </div>
+            </div>
+            <div class="icon">
+                <img src="Images/award.png" alt="Premium Materials" class="all-icons" id="icon-3"> 
+                <div>
+                    <h2 class="icon-h2">Quality Assurance</h2>
+                    <p class="icon-para">For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+                </div>
+            </div>
+        </section>
+        <section class="vid" id="how-it-works">
+            <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/y8Yv4pnO7qc" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+        </section>
+        <section class="grid" id="pricing">
+            <div class="main-grid" id="grid-1">
+                <div class="top-grid">
+                <h4>TENOR TROMBONE</h4>
+                </div>
+                <div class="bottom-grid">
+                    <h4 class="grid-h4">$600</h4>
+                    <ol>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum.</li>
+                    </ol>
+                    <button class="select-button">SELECT</button>
+                </div> 
+            </div>
+            <div class="main-grid" id="grid-1">
+                <div class="top-grid">
+                <h4>BASS TROMBONE</h4>
+                </div>
+                <div class="bottom-grid">
+                    <h4 class="grid-h4">$900</h4>
+                    <ol>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum.</li>
+                    </ol>
+                    <button class="select-button">SELECT</button>
+                </div> 
+            </div>
+            <div class="main-grid" id="grid-1">
+                <div class="top-grid">
+                <h4>VALVE TROMBONE</h4>
+                </div>
+                <div class="bottom-grid">
+                    <h4 class="grid-h4">$1200</h4>
+                    <ol>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum.</li>
+                    </ol>
+                    <button class="select-button">SELECT</button>
+                </div> 
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <ul>
+                <li>Privacy</li>
+                <li>Terms</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-para">Copyright 2016, Original Trombones</p>
+        </div>
+    </footer>
+</body>
+</html>
